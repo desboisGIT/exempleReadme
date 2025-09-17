@@ -1,1 +1,49 @@
-<img src="./test.svg" alt="Animated SVG bbanner" />
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1000" height="240" viewBox="0 0 1000 240" role="img">
+
+  <!-- defs: animated gradient background -->
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0ea5e9">
+        <animate attributeName="stop-color" values="#0ea5e9;#7c3aed;#0ea5e9" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#7c3aed">
+        <animate attributeName="stop-color" values="#7c3aed;#06b6d4;#7c3aed" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#06b6d4">
+        <animate attributeName="stop-color" values="#06b6d4;#0ea5e9;#06b6d4" dur="6s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+  </defs>
+
+  <!-- background -->
+  <rect x="0" y="0" width="100%" height="100%" fill="url(#g)" />
+  <rect x="0" y="0" width="100%" height="100%" fill="#000" fill-opacity="0.25" />
+
+  <!-- Title -->
+  <text x="50%" y="40%" text-anchor="middle" dominant-baseline="middle"
+        font-family="system-ui, sans-serif" font-size="34" font-weight="600"
+        fill="#ffffff" style="user-select:text;">
+    My Animated SVG Banner
+  </text>
+
+  <!-- Links row -->
+  <g font-family="system-ui, sans-serif" font-size="20" fill="#ffffff" text-anchor="middle">
+    <!-- My Site -->
+    <a xlink:href="https://example.com" href="https://example.com" target="_blank">
+      <text x="40%" y="70%" style="user-select:text;">My Site</text>
+    </a>
+
+    <!-- My Blog -->
+    <a xlink:href="https://blog.example.com" href="https://blog.example.com" target="_blank">
+      <text x="50%" y="70%" style="user-select:text;">My Blog</text>
+    </a>
+
+    <!-- My Project -->
+    <a xlink:href="https://github.com/example/project" href="https://github.com/example/project" target="_blank">
+      <text x="60%" y="70%" style="user-select:text;">My Project</text>
+    </a>
+  </g>
+</svg>
