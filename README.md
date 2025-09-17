@@ -1,1 +1,1 @@
-<img src="./test.svg" alt="Animated SVG banner" />
+<img src="./test.svg" alt="Animated SVG bbanner" />
